@@ -24,6 +24,15 @@ CREATE TABLE users (
 	CONSTRAINT PK_user PRIMARY KEY (user_id)
 )
 
+CREATE TABLE tricks ( 
+trick_id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+name varchar(60) NOT NULL,
+stance varchar(60) NOT NULL,
+bagged varchar (60) NOT NULL,
+link varchar (300) NOT NULL
+) 
+
+
 --populate default data
 INSERT INTO users (username, password_hash, salt, user_role) VALUES ('user','Jg45HuwT7PZkfuKTz6IB90CtWY4=','LHxP4Xh7bN0=','user');
 INSERT INTO users (username, password_hash, salt, user_role) VALUES ('admin','YhyGVQ+Ch69n4JMBncM4lNF/i9s=', 'Ar/aB2thQTI=','admin');
