@@ -6,7 +6,7 @@
         public string Name { get; set; }
         public string Stance { get; set; }
 
-        public bool Bagged { get; set; }
+        public string Bagged { get; set; }
 
         public string Link { get; set; }
     }

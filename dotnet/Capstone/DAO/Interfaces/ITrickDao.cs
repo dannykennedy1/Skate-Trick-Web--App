@@ -1,5 +1,6 @@
 ﻿using Capstone.Models;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace Capstone.DAO
 {
@@ -9,11 +10,14 @@ namespace Capstone.DAO
 
         Trick GetTrickById(int id);
 
-        Trick GetTrickByName(string name);
+        Trick AddNewTrick(Trick newTrick);
 
-        Trick GetTrickByStance (string stance);
-
-        IList<Trick> GetBaggedTricks(bool bagged);
+        Trick UpdateTrick(Trick updatedTrick);
+      
+/*
+        //Trick GetTrickByStance(string stance);
+        Trick UpdateTrick(string bagged)
+        IList<Trick> GetBaggedTricks(bool bagged)*/
 
     }
 }
