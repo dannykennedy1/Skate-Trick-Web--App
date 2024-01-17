@@ -63,5 +63,20 @@ namespace Capstone.Controllers
             }
         }
 
+        [HttpDelete("{id}")]
+
+        public ActionResult<Trick> Delete(int id)
+        {
+            bool result = trickDao.DeleteTrickById(id);
+
+            if(result == true)
+            {
+                return NoContent();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
     }
 }

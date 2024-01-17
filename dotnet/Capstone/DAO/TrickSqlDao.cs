@@ -152,6 +152,46 @@ namespace Capstone.DAO
             }
         }
 
+        public bool DeleteTrickById(int id)
+        {
+            string sql = "DELETE FROM tricks WHERE trick_id = @trick_id";
+
+
+            try
+            {
+
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@trick_id", id);
+
+                        int count = cmd.ExecuteNonQuery();
+
+                        if (count == 1)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                }
+            }
+            catch(SqlException ex)
+            {
+                throw new DaoException("SQL exception occurred", ex);
+            }
+            
+                
+            
+        }
+
+        
 
 
         private Trick MapRowToTrick(SqlDataReader reader)

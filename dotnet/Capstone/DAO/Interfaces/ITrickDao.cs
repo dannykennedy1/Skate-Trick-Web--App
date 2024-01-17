@@ -6,18 +6,14 @@ namespace Capstone.DAO
 {
     public interface ITrickDao
     {
-        IList<Trick> GetTricks();
+        public IList<Trick> GetTricks();
 
-        Trick GetTrickById(int id);
+        public Trick GetTrickById(int id);
 
-        Trick AddNewTrick(Trick newTrick);
+        public Trick AddNewTrick(Trick newTrick);
 
-        Trick UpdateTrick(Trick updatedTrick);
-      
-/*
-        //Trick GetTrickByStance(string stance);
-        Trick UpdateTrick(string bagged)
-        IList<Trick> GetBaggedTricks(bool bagged)*/
+        public Trick UpdateTrick(Trick updatedTrick);
+        public bool DeleteTrickById(int id);
 
     }
 }
