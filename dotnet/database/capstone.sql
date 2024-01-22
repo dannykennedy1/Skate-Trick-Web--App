@@ -37,5 +37,13 @@ link varchar (300) NOT NULL
 INSERT INTO users (username, password_hash, salt, user_role) VALUES ('user','Jg45HuwT7PZkfuKTz6IB90CtWY4=','LHxP4Xh7bN0=','user');
 INSERT INTO users (username, password_hash, salt, user_role) VALUES ('admin','YhyGVQ+Ch69n4JMBncM4lNF/i9s=', 'Ar/aB2thQTI=','admin');
 
+INSERT INTO tricks (name, stance, bagged, link) VALUES('tre flip', 'regular', 'no', 'https://youtu.be/XGw3YkQmNig?si=C-8ClyT7bpZTGY1p')
+INSERT INTO tricks (name, stance, bagged, link) VALUES('kickflip', 'regular', 'yes', 'https://youtu.be/Zebs7JZ2PW0?si=cqeRVCrc_Q88jb5z')
+INSERT INTO tricks (name, stance, bagged, link) VALUES ('pop shuv', 'regular', 'yes', 'https://youtu.be/Oq9Y3i7HD40?si=dMmkjAmtq6UzP4Jp')
+INSERT INTO tricks (name, stance, bagged, link) VALUES('Backside 360', 'regular', 'no', 'https://youtu.be/2v8dbWKry7w?si=WBHxrFHaCUrEQHEs')
+INSERT INTO tricks (name, stance, bagged, link) VALUES('backside kickflip', 'regular', 'no', 'https://youtu.be/0Ae_bLiOA8s?si=MG4sKjD8WXkD-yph')
+INSERT INTO tricks (name, stance, bagged, link) VALUES ('backside bigspin', 'regular', 'no', 'https://youtu.be/Oq9Y3i7HD40?si=dMmkjAmtq6UzP4Jphttps://youtu.be/MsPPeoeukoU?si=fnGo7bbkwpDVgl00')
+
+
 GO
 
