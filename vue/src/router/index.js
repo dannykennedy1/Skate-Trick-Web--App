@@ -6,6 +6,7 @@ import HomeView from '../views/HomeView.vue';
 import LoginView from '../views/LoginView.vue';
 import LogoutView from '../views/LogoutView.vue';
 import RegisterView from '../views/RegisterView.vue';
+import TrickView from '../views/TrickView.vue'
 
 
 /**
@@ -49,6 +50,15 @@ const routes = [
       requiresAuth: false
     }
   },
+  {
+    path: "/trick",
+    name: "tricks",
+    component: TrickView,
+    meta: {
+      requiresAuth: false
+    }
+
+  }
 
 ];
 

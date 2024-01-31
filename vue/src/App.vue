@@ -3,7 +3,7 @@
   <SideBar/>
   
 <v-main>
- <MainContent/>
+<TrickView></TrickView>
 </v-main>
 
  </v-app>
@@ -11,6 +11,6 @@
 
 <script setup>
   import SideBar from "../src/components/Sidebar.vue"
-import MainContent from "../src/components/MainContent.vue"
+import TrickView from "../src/views/TrickView.vue"
 </script>
 
